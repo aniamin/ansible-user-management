@@ -150,8 +150,6 @@ Make a directory called `callback_plugins` next to your playbook and put `profil
 
 Now, run your playbook just as you normally would!
 
-.. code-block:: bash
-
    ansible <args here>
    <normal output here>
    PLAY RECAP ********************************************************************
