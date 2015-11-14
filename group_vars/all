@@ -1,0 +1,19 @@
+ec2: 
+  region: us-east-1
+  group: basic
+  instance_type: m1.small
+  image: ami-7bb47110
+  wait: true
+  count: 1
+  instance_tags:
+    role: default
+    env: production
+    monitoring: False
+    configuration_management: ansible
+  keypair: basic-east
+  zone: us-east-1b
+
+use_fabric: yes
+primary_eth: ansible_eth0
+env_user: ubuntu
+set_up_user_auth: yes

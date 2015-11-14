@@ -1,0 +1,7 @@
+---
+- name: Sudo installed
+  action: "{{ ansible_pkg_mgr }} name=sudo state=installed"
+
+- name: Admin sudoers
+  template: "src=sudo_administrators.j2 dest=/etc/sudoers.d/administrators owner=root group=root mode=0440"
+  when: users_manage_admin_sudoers == true

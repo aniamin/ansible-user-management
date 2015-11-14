@@ -1,0 +1,10 @@
+---
+- name: Deploys the User Information
+  hosts: test_instance
+  sudo: yes
+
+  vars_files:
+  - vars/user_list.yaml
+
+  roles:
+    - manage_users
