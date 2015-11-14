@@ -137,6 +137,17 @@ Make a directory called `callback_plugins` next to your playbook and put `profil
     cd callback_plugins
     wget https://raw.githubusercontent.com/jlafon/ansible-profile/master/callback_plugins/profile_tasks.py
 
+Usage
+^^^^^
+
+Make a directory called `callback_plugins` next to your playbook and put `profile_tasks.py` inside of it.
+
+.. code-block:: bash
+
+    mkdir callback_plugins
+    cd callback_plugins
+    wget https://raw.githubusercontent.com/jlafon/ansible-profile/master/callback_plugins/profile_tasks.py
+
 Now, run your playbook just as you normally would!
 
 .. code-block:: bash
@@ -144,16 +155,17 @@ Now, run your playbook just as you normally would!
    ansible <args here>
    <normal output here>
    PLAY RECAP ********************************************************************
-   manage_users | Create groups for each user with their name -------------- 7.17s
-   manage_users | Create users --------------------------------------------- 6.78s
-   sudo-permission | Admin sudoers ----------------------------------------- 4.59s
-   manage_users | Create groups -------------------------------------------- 4.09s
-   manage_users | SSH keys ------------------------------------------------- 3.83s
-   sudo-permission | Sudo installed ---------------------------------------- 2.47s
-   manage_users | Add admin users to admin group --------------------------- 2.44s
-   manage_users | Get OS specific values ----------------------------------- 0.02s
+manage_users | Create groups for each user with their name -------------- 7.17s
+manage_users | Create users --------------------------------------------- 6.78s
+sudo-permission | Admin sudoers ----------------------------------------- 4.59s
+manage_users | Create groups -------------------------------------------- 4.09s
+manage_users | SSH keys ------------------------------------------------- 3.83s
+sudo-permission | Sudo installed ---------------------------------------- 2.47s
+manage_users | Add admin users to admin group --------------------------- 2.44s
+manage_users | Get OS specific values ----------------------------------- 0.02s
 
 Playbook finished: Sat Nov 14 18:41:10 2015, 8 total tasks.  0:00:31 elapsed.
+
 If for some reason you want to disable this temporarily, set the
 environment variable `ANSIBLE_PROFILE_DISABLE` to any value (even an
 empty string).
