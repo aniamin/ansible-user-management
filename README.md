@@ -126,8 +126,7 @@ to *true*
 
 ### Ansible Task Profiling
 
-Usage
-^^^^^
+Usage:
 
 Make a directory called `callback_plugins` next to your playbook and put `profile_tasks.py` inside of it.
 
@@ -137,8 +136,7 @@ Make a directory called `callback_plugins` next to your playbook and put `profil
     cd callback_plugins
     wget https://raw.githubusercontent.com/jlafon/ansible-profile/master/callback_plugins/profile_tasks.py
 
-Usage
-^^^^^
+Usage:
 
 Make a directory called `callback_plugins` next to your playbook and put `profile_tasks.py` inside of it.
 
